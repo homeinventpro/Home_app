@@ -1,0 +1,121 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.matan.listit.InventoryList_Page">
+
+
+    <TableLayout
+        android:id="@+id/ProdList"
+        android:background="@drawable/bg"
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        android:layout_gravity="center_horizontal"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:layout_weight="0.35">
+
+        <TableRow
+            android:background="#A9D0F5"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:visibility="visible">
+
+            <TextView
+                android:background="@drawable/cell_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Product name"
+                android:id="@+id/Prod_Name" />
+
+            <TextView
+                android:background="@drawable/cell_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Product code"
+                android:id="@+id/Prod_Code"
+                android:layout_column="1" />
+
+            <TextView
+                android:background="@drawable/cell_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Quantity"
+                android:id="@+id/Prod_Quan"
+                android:layout_column="2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="12dp"
+            android:layout_height="25dp"
+            android:visibility="visible"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="product a"
+                android:id="@+id/textView5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="2AQ34E"
+                android:id="@+id/textView6"
+                android:layout_column="1" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible">
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add product"
+        android:onClick="onClick"
+        android:id="@+id/Add_Button"
+        android:visibility="visible" />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/categorySpinner"
+        android:layout_weight="0.35"
+        android:background="#9e5886cc"
+        android:popupBackground="#666699"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productSpinner"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.35"
+        android:spinnerMode="dropdown"
+        android:background="#9e5886cc"
+        android:popupBackground="#666699"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </TableRow>
+</FrameLayout>

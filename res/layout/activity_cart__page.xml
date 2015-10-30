@@ -1,0 +1,57 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#d1e7e7"
+    android:weightSum="1">
+
+
+    <TableLayout
+        android:id="@+id/cartProdList"
+        android:background="@drawable/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:background="#A9D0F5"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:visibility="visible">
+
+            <TextView
+                android:background="@drawable/cell_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Product name"
+                android:id="@+id/Prod_Name" />
+
+            <TextView
+                android:background="@drawable/cell_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Product code"
+                android:id="@+id/Prod_Code"
+                android:layout_column="1" />
+
+            <TextView
+                android:background="@drawable/cell_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="nedded"
+                android:id="@+id/Prod_Quan"
+                android:layout_column="2" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
